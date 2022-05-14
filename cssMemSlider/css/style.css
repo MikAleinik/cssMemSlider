@@ -3,6 +3,7 @@
   --label_border-color      : #000000;
   --label_background        : #DCDCDC;
   --label_background-hover  : #C0C0C0;
+  --label_background-active : #DAA520;
   --label_background-checked: #696969;
 }
 
@@ -19,7 +20,7 @@ header,
 footer {
   position: relative;
   height  : 5%;
-  width   : 70%;
+  width   : 110vh;
 
   margin: 0 auto;
 
@@ -73,7 +74,7 @@ img {
   height: 90%;
   width : 100%;
 
-  margin: 0 auto;
+  margin : 0 auto;
   padding: 0% 0% 5% 0%;
 }
 
@@ -118,6 +119,11 @@ figcaption {
 .slider_control label:hover div,
 .slider_control label div:hover {
   background: var(--label_background-hover);
+}
+
+.slider_control label:active div,
+.slider_control label div:active {
+  background: var(--label_background-active);
 }
 
 #button1:checked~.slider_wrapper .slider_content {
@@ -171,9 +177,15 @@ figcaption {
   }
 }
 
+@media screen and (max-height: 255px) {
+  img {
+    height: 70%;
+  }
+}
+
 @media screen and (max-width: 768px) {
   figcaption {
-    width : 100%;
+    width: 100%;
 
     text-align: center;
   }

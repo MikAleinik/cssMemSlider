@@ -36,6 +36,8 @@ footer {
 
   background: var(--slider_background);
 
+  border: 0.1em solid;
+
   overflow: hidden;
 }
 
@@ -90,7 +92,7 @@ figcaption {
   width : 100%;
 
   margin : -6% 0% 0% 0%;
-  padding: 0% 3% 0% 0%;
+  padding: 0%;
 
   text-align: end;
 }
@@ -124,6 +126,10 @@ figcaption {
 .slider_control label:active div,
 .slider_control label div:active {
   background: var(--label_background-active);
+}
+
+.slider_control>:nth-child(4) {
+  margin: 0% 0% 0% 1%;
 }
 
 #button1:checked~.slider_wrapper .slider_content {

@@ -56,13 +56,15 @@ footer {
 
   margin: 0 auto;
 
+  white-space: nowrap;
+  
   transition: 1s;
 }
 
 figure {
-  float : left;
-  height: 100%;
-  width : 25%;
+  display: inline-block;
+  height : 100%;
+  width  : 25%;
 
   margin: 0;
 }
@@ -92,8 +94,8 @@ figcaption {
 }
 
 .slider_control label {
-  float: right;
-  width: max-content;
+  display: inline-block;
+  width  : max-content;
 
   margin : 0% 1%;
   padding: 1%;
@@ -117,19 +119,19 @@ figcaption {
   background: var(--label_background-hover);
 }
 
-#button4:checked~.slider_wrapper .slider_content {
+#button1:checked~.slider_wrapper .slider_content {
   margin-left: 0%;
 }
 
-#button3:checked~.slider_wrapper .slider_content {
+#button2:checked~.slider_wrapper .slider_content {
   margin-left: -100%;
 }
 
-#button2:checked~.slider_wrapper .slider_content {
+#button3:checked~.slider_wrapper .slider_content {
   margin-left: -200%;
 }
 
-#button1:checked~.slider_wrapper .slider_content {
+#button4:checked~.slider_wrapper .slider_content {
   margin-left: -300%;
 }
 
